@@ -1,0 +1,132 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+img{
+  height: 200px;
+}
+
+@media screen and (max-width: 980px) {
+  .row {
+    width: 100%;
+    margin: auto;
+    background: powderblue;
+  }
+  span {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  #why .row img {
+   padding: 30px;
+ }
+}
+
+@media screen and (min-width: 702px max-width: 800px) {
+  #why .row img {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .row {
+  background: lightgreen;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: normal;
+    font-variant: small-caps;
+    padding: 0 20px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+  img {
+    height: 100px;
+  }
+}
+
+/* BLOCCO LEZIONI Responsive*/
+@media screen and (min-width: 701px){
+  #lezioni .row > .left, #lezioni .row > .right{
+    width: 50%;
+    float: left;
+  }
+}
+
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS Responsive*/
+@media screen and (min-width: 701px) {
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+    float: left;
+    width: 33%;
+  }
+}
+
+#steps{
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+@media screen and (min-width: 701px) {
+  #why > .row {
+    height: 600px;
+  }
+
+  #why > .row hr {
+    width: 0;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: left;
+    width: calc(100% / 3);
+    /* margin-top: 80px; */
+  }
+}
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+}
+
+/* COMMON */
+
+[background="grey"]{
+  background-color: #f9f9f9;
+}
+
+.clear {
+  clear:both;
+}
